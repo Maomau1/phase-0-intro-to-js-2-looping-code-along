@@ -30,22 +30,34 @@ function wrapGiftsW(gifts) {
 
 wrapGiftsW(gifts); */
 
-function countDown(start) {
-    for ( let i = start; i>= 0; i--) {
-        console.log(i)
-    }
+// function countDown(start) {
+//     for ( let i = start; i>= 0; i--) {
+//         console.log(i)
+//     }
 
+// }
+
+
+// /*const list = [mau, mom, mee];
+// const gift = `my g`;*/
+// function writeCards (list, gift) {
+//     const newArray = [];
+//     for (let i = 0; i < list.length; i++) {
+//         newArray [i] = `Thank you, ${list[i]}, for the wonderful ${gift} gift!`;
+//         //debugger;
+//     } 
+//     return newArray;
+    
+function writeCards(array, event) {
+    const newArray = []
+    for (let i=0; i <array.length; i++ ){
+        newArray[i]=`Thank you, ${array[i]}, for the wonderful ${event} gift!`
+    }
+    return newArray
 }
 
-
-/*const list = [mau, mom, mee];
-const gift = `my g`;*/
-function writeCards (list, gift) {
-    const newArray = [];
-    for (let i = 0; i < list.length; i++) {
-        newArray [i] = `Thank you, ${list[i]}, for the wonderful ${gift} gift!`;
-        //debugger;
-    } 
-    return newArray;
-    
+function countDown(number){
+    while (number>=0){
+        console.log(number--)
+    }
 }
